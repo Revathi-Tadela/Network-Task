@@ -1,0 +1,215 @@
+A newer release of "Amazon Linux" is available.
+  Version 2023.5.20240730:
+  Version 2023.5.20240805:
+Run "/usr/bin/dnf check-release-update" for full release and version update info
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Fri Aug  9 15:12:11 2024 from 13.239.158.4
+[ec2-user@ip-172-31-6-132 ~]$ ls -lrt
+total 24
+-rwxrw-r--. 1 ec2-user ec2-user   0 Jul 25 14:01 test.txt
+-rwxr-xr-x. 1 ec2-user ec2-user 822 Aug  6 09:28 bash.sh
+-rwxr-xr-x. 1 ec2-user ec2-user 588 Aug  7 03:55 task1.sh
+-rw-r--r--. 1 ec2-user ec2-user  16 Aug  7 03:56 input.txt
+drwxr-xr-x. 2 ec2-user ec2-user  98 Aug  7 03:57 process-parent
+-rwxr-xr-x. 1 ec2-user ec2-user 652 Aug  7 04:23 process-file.sh
+-rw-r--r--. 1 ec2-user ec2-user 145 Aug  7 05:02 yourfile.txt
+-rwxr-xr-x. 1 ec2-user ec2-user 852 Aug  7 12:34 crontask.sh
+-rwxr-xr-x. 1 ec2-user ec2-user   0 Aug  7 12:34 cleanup.sh
+-rwxr-xr-x. 1 ec2-user ec2-user   0 Aug  7 12:34 startup.sh
+-rwxr-xr-x. 1 ec2-user ec2-user   0 Aug  7 12:34 script.sh
+drwxr-xr-x. 2 ec2-user ec2-user   6 Aug  9 15:13 workspace
+drwxr-xr-x. 2 ec2-user ec2-user   6 Aug  9 15:13 build
+drwxr-xr-x. 5 ec2-user ec2-user 116 Aug  9 15:42 task2
+[ec2-user@ip-172-31-6-132 ~]$ mkdir File_Creation
+[ec2-user@ip-172-31-6-132 ~]$ cd File_Creation/
+[ec2-user@ip-172-31-6-132 File_Creation]$ ls -lrt
+total 0
+[ec2-user@ip-172-31-6-132 File_Creation]$ mkdir my_folder
+[ec2-user@ip-172-31-6-132 File_Creation]$ cd my_folder/
+[ec2-user@ip-172-31-6-132 my_folder]$ touch my_file.txt
+[ec2-user@ip-172-31-6-132 my_folder]$ vi my_file.txt 
+[ec2-user@ip-172-31-6-132 my_folder]$ touch another_file.txt
+[ec2-user@ip-172-31-6-132 my_folder]$ vi another_file.txt 
+[ec2-user@ip-172-31-6-132 my_folder]$ cat my_file.txt 
+Hello world!
+
+[ec2-user@ip-172-31-6-132 my_folder]$ cat another_file.txt 
+welcome to Guvi Devops
+[ec2-user@ip-172-31-6-132 my_folder]$ cat another_file.txt >> my_file.txt 
+[ec2-user@ip-172-31-6-132 my_folder]$ cat my_file.txt 
+Hello world!
+
+welcome to Guvi Devops
+[ec2-user@ip-172-31-6-132 my_folder]$ vi file.txt
+[ec2-user@ip-172-31-6-132 my_folder]$ mv file.txt file.sh
+[ec2-user@ip-172-31-6-132 my_folder]$ ./file.sh
+-bash: ./file.sh: Permission denied
+[ec2-user@ip-172-31-6-132 my_folder]$ ls -lrt
+total 12
+-rw-r--r--. 1 ec2-user ec2-user 23 Aug 13 15:13 another_file.txt
+-rw-r--r--. 1 ec2-user ec2-user 37 Aug 13 15:16 my_file.txt
+-rw-r--r--. 1 ec2-user ec2-user 47 Aug 13 15:19 file.sh
+[ec2-user@ip-172-31-6-132 my_folder]$ chmod 755 file.sh 
+[ec2-user@ip-172-31-6-132 my_folder]$ ls -lrt
+total 12
+-rw-r--r--. 1 ec2-user ec2-user 23 Aug 13 15:13 another_file.txt
+-rw-r--r--. 1 ec2-user ec2-user 37 Aug 13 15:16 my_file.txt
+-rwxr-xr-x. 1 ec2-user ec2-user 47 Aug 13 15:19 file.sh
+[ec2-user@ip-172-31-6-132 my_folder]$ ./file.sh
+[ec2-user@ip-172-31-6-132 my_folder]$ ls -lrt
+total 12
+-rw-r--r--. 1 ec2-user ec2-user 23 Aug 13 15:13 another_file.txt
+-rw-r--r--. 1 ec2-user ec2-user 37 Aug 13 15:16 my_file.txt
+-rwxr-xr-x. 1 ec2-user ec2-user 47 Aug 13 15:19 file.sh
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file6.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file5.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file4.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file3.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file2.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file1.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file9.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file8.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file7.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file15.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file14.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file13.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file12.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file11.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file10.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file20.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file19.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file18.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file17.txt
+-rw-r--r--. 1 ec2-user ec2-user  0 Aug 13 15:19 file16.txt
+[ec2-user@ip-172-31-6-132 my_folder]$ mkdir file
+[ec2-user@ip-172-31-6-132 my_folder]$ mv file*.txt file
+[ec2-user@ip-172-31-6-132 my_folder]$ ls -lrt
+total 28
+-rw-r--r--. 1 ec2-user ec2-user    23 Aug 13 15:13 another_file.txt
+-rw-r--r--. 1 ec2-user ec2-user    37 Aug 13 15:16 my_file.txt
+-rwxr-xr-x. 1 ec2-user ec2-user    47 Aug 13 15:19 file.sh
+drwxr-xr-x. 2 ec2-user ec2-user 16384 Aug 13 15:20 file
+[ec2-user@ip-172-31-6-132 my_folder]$ cd file
+[ec2-user@ip-172-31-6-132 file]$ ls -lrt
+total 0
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file6.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file5.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file4.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file3.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file2.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file1.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file9.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file8.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file7.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file15.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file14.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file13.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file12.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file11.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file10.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file20.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file19.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file18.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file17.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file16.txt
+[ec2-user@ip-172-31-6-132 file]$ mv file6.txt file6.yml
+[ec2-user@ip-172-31-6-132 file]$ ls -lrt
+total 0
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file6.yml
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file5.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file4.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file3.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file2.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file1.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file9.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file8.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file7.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file15.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file14.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file13.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file12.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file11.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file10.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file20.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file19.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file18.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file17.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file16.txt
+[ec2-user@ip-172-31-6-132 file]$ mv file5.txt file5.yml
+[ec2-user@ip-172-31-6-132 file]$ mv file4.txt file4.yml
+[ec2-user@ip-172-31-6-132 file]$ mv file3.txt file3.yml
+[ec2-user@ip-172-31-6-132 file]$ mv file2.txt file2.yml
+[ec2-user@ip-172-31-6-132 file]$ ls -lrt
+total 0
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file6.yml
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file5.yml
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file4.yml
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file3.yml
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file2.yml
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file1.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file9.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file8.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file7.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file15.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file14.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file13.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file12.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file11.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file10.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file20.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file19.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file18.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file17.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file16.txt
+[ec2-user@ip-172-31-6-132 file]$ ls -lt | head -n 5
+total 0
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file16.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file17.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file18.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file19.txt
+[ec2-user@ip-172-31-6-132 file]$ ls -lt | head -^C5
+[ec2-user@ip-172-31-6-132 file]$ ls -lrt
+total 0
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file6.yml
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file5.yml
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file4.yml
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file3.yml
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file2.yml
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file1.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file9.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file8.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file7.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file15.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file14.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file13.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file12.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file11.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file10.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file20.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file19.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file18.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file17.txt
+-rw-r--r--. 1 ec2-user ec2-user 0 Aug 13 15:19 file16.txt
+[ec2-user@ip-172-31-6-132 file]$ ls -lart | head -5
+total 16
+-rw-r--r--. 1 ec2-user ec2-user     0 Aug 13 15:19 file6.yml
+-rw-r--r--. 1 ec2-user ec2-user     0 Aug 13 15:19 file5.yml
+-rw-r--r--. 1 ec2-user ec2-user     0 Aug 13 15:19 file4.yml
+-rw-r--r--. 1 ec2-user ec2-user     0 Aug 13 15:19 file3.yml
+[ec2-user@ip-172-31-6-132 file]$ ls -lart | head -6
+total 16
+-rw-r--r--. 1 ec2-user ec2-user     0 Aug 13 15:19 file6.yml
+-rw-r--r--. 1 ec2-user ec2-user     0 Aug 13 15:19 file5.yml
+-rw-r--r--. 1 ec2-user ec2-user     0 Aug 13 15:19 file4.yml
+-rw-r--r--. 1 ec2-user ec2-user     0 Aug 13 15:19 file3.yml
+-rw-r--r--. 1 ec2-user ec2-user     0 Aug 13 15:19 file2.yml
+[ec2-user@ip-172-31-6-132 file]$ 
